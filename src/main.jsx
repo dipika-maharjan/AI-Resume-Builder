@@ -15,15 +15,15 @@ const router = createBrowserRouter([
     element:<App/>, //parent route
     children:[
       {
-        path:'/',
-        element:<Home/> //child route
-      },
-      {
         path:'/dashboard',
         element:<Dashboard/> //child route
       }
     ]
   },
+  {
+        path:'/',
+        element:<Home/> //child route
+      },
   {
     path:'/auth/sign-in',
     element:<SigninPage/>
