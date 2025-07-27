@@ -10,7 +10,8 @@ const axiosClient = axios.create({
     }
 })
 
-const CreateNewResume = (data) => axiosClient.post('resumes', data)
+const CreateNewResume = (data) => axiosClient.post('user-resumes', { data })
+
 export default{
     CreateNewResume
 }
